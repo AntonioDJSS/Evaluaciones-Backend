@@ -13,128 +13,128 @@ const evaluacioneSchema = mongoose.Schema({
        // unique: true,
         trim: true
     },
-    pregunta01:{
+    respuesta01:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta02:{
+    respuesta02:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta03:{
+    respuesta03:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta04:{
+    respuesta04:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta05:{
+    respuesta05:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta06:{
+    respuesta06:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta07:{
+    respuesta07:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta08: {
+    respuesta08: {
         type: String,
         required: true,
         trim: true
     },
-    pregunta09:{
+    respuesta09:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta10:{
+    respuesta10:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta11:{
+    respuesta11:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta12:{
+    respuesta12:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta13:{
+    respuesta13:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta14:{
+    respuesta14:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta15:{
+    respuesta15:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta16:{
+    respuesta16:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta17:{
+    respuesta17:{
         type: String,
         required: true,
         trim: true
 
     },
-    pregunta18:{
+    respuesta18:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta19:{
+    respuesta19:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta20:{
+    respuesta20:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta21:{
+    respuesta21:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta22:{
+    respuesta22:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta23:{
+    respuesta23:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta24:{
+    respuesta24:{
         type: String,
         required: true,
         trim: true
     },
-    pregunta25:{
+    respuesta25:{
         type: String,
         required: true,
         trim: true

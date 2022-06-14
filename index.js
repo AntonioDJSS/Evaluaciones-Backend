@@ -6,6 +6,8 @@ import  dotenv  from "dotenv";
 import conectarDB from "./config/db.js";
 //Importamos las rutas de evaluaciones
 import evaluacionesRoutes from  "./routes/evaluacionesRoutes.js"
+//Importamos las rutas de preguntas
+import preguntasRoutes from "./routes/preguntasRoutes.js"
 //Funcionalidad para el servidor
 const app = express();
 //config posman
@@ -28,3 +30,5 @@ app.listen(PORT, () =>{
 /* jalamos la info del ..env de mongoUri
 console.log(process.env.MONGO_URI); */
 app.use("/evaluaciones",evaluacionesRoutes);
+app.use("/preguntas",preguntasRoutes);
+
