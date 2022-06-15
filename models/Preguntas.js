@@ -3,6 +3,10 @@ import mongoose from "mongoose";
 //creamos el esquema
 
 const preguntasSchema = mongoose.Schema({
+    usuario: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'evaluaciones',
+    },
     pregunta01:{
         type: String,
         required: true,

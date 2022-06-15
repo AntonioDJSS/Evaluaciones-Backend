@@ -11,9 +11,9 @@ const registrar =async (req,res) =>{
     //Guardan los datos con posman
     try{
 
-        const preguntas = new Preguntas(req.body);
-        const guardarPreguntas = await preguntas.save();
-        res.json({guardarPreguntas});
+        const usuario = new Preguntas(req.body);
+        const guardarUsuario = await usuario.save();
+        res.json({guardarUsuario});
 
     }catch(error){
         console.log(error);

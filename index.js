@@ -9,6 +9,7 @@ import evaluacionesRoutes from  "./routes/evaluacionesRoutes.js"
 //Importamos las rutas de preguntas
 import preguntasRoutes from "./routes/preguntasRoutes.js"
 //Importamos la dependencia cors para solucionar el error en el front cuando hacemos una peticion al back
+import usuarioRoutes from "./routes/usuarioRoutes.js"
 //con cors evitamos que alguien acceda a la api
 import cors from "cors";
 //Funcionalidad para el servidor
@@ -20,7 +21,7 @@ dotenv.config();
 //Mandamos a llamar la funcion que se creo en db.js
 conectarDB();
 //conf los cors
-const dominiosPermitidos = ['http://localhost:3000'];
+const dominiosPermitidos = [process.env.FRONTEND_URL]
 const corsOptions={
     origin:function(origin,callback){
         if(dominiosPermitidos.indexOf(origin) !== -1){
@@ -47,4 +48,5 @@ app.listen(PORT, () =>{
 console.log(process.env.MONGO_URI); */
 app.use("/evaluaciones",evaluacionesRoutes);
 app.use("/preguntas",preguntasRoutes);
+app.use("/usuario", usuarioRoutes);
 
