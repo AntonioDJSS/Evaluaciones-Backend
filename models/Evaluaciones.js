@@ -4,12 +4,12 @@ import mongoose from "mongoose";
 const evaluacioneSchema = mongoose.Schema({
     nombre:{
         type: String,
-        required: true,
+       // required: true,
         trim: true // eliminamos espacios en blanco
     },
     email:{
         type: String,
-        required: true,
+       // required: true,
        // unique: true,
         trim: true
     },
@@ -87,7 +87,8 @@ const evaluacioneSchema = mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    },
+    }
+    /*,
     respuesta16:{
         type: String,
         required: true,
@@ -138,7 +139,7 @@ const evaluacioneSchema = mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    }
+    } */
 
    
  });

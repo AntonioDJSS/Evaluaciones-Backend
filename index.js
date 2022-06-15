@@ -8,6 +8,9 @@ import conectarDB from "./config/db.js";
 import evaluacionesRoutes from  "./routes/evaluacionesRoutes.js"
 //Importamos las rutas de preguntas
 import preguntasRoutes from "./routes/preguntasRoutes.js"
+//Importamos la dependencia cors para solucionar el error en el front cuando hacemos una peticion al back
+//con cors evitamos que alguien acceda a la api
+import cors from "cors";
 //Funcionalidad para el servidor
 const app = express();
 //config posman
@@ -16,6 +19,19 @@ app.use(express.json());
 dotenv.config();
 //Mandamos a llamar la funcion que se creo en db.js
 conectarDB();
+//conf los cors
+const dominiosPermitidos = ['http://localhost:3000'];
+const corsOptions={
+    origin:function(origin,callback){
+        if(dominiosPermitidos.indexOf(origin) !== -1){
+            //El origen del equest esta permitido
+            callback(null,true)
+        }else{
+            callback(new Error('No permitido por CORS'))
+        }
+    }
+}
+app.use(cors(corsOptions));
 /*
 //Cramos la pag para correr en el navegador
 app.use("/",(req,res)=>{
