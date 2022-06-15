@@ -39,7 +39,7 @@ app.use("/",(req,res)=>{
     res.send("Hola mundo");
 }); */
 //Puerto para que corra
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4001
 //Puerto para que corra
 app.listen(PORT, () =>{
     console.log(`Servidor ejecutando en el puerto ${PORT}`);

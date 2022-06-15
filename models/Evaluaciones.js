@@ -2,6 +2,16 @@ import mongoose from "mongoose";
 //Creamos la base de datos
 //Se crea el esquema
 const evaluacioneSchema = mongoose.Schema({
+    nombre:{
+        type: String,
+        //required: true,
+        trim: true
+    },
+    email:{
+        type: String,
+        //required: true,
+        trim: true
+    },
     respuesta01:{
         type: String,
         //required: true,
@@ -76,8 +86,7 @@ const evaluacioneSchema = mongoose.Schema({
         type: String,
         //required: true,
         trim: true
-    }
-    /*,
+    },
     respuesta16:{
         type: String,
         required: true,
@@ -103,7 +112,8 @@ const evaluacioneSchema = mongoose.Schema({
         type: String,
         required: true,
         trim: true
-    },
+    }
+    /* 
     respuesta21:{
         type: String,
         required: true,
@@ -129,7 +139,7 @@ const evaluacioneSchema = mongoose.Schema({
         required: true,
         trim: true
     } */
-
+ 
    
  });
  //Se crea el registro del modelo
