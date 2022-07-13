@@ -55,6 +55,6 @@ app.use("/evaluaciones", evaluacionesRoutes);
 app.use("/preguntas", preguntasRoutes);
 app.use("/usuario", usuarioRoutes);
 app.use("/residuos", residuosRoutes);
-app.use("/encuestaSatisfaccion", encuestaSatisfaccionRoutes);
+app.use("/atmosferas", encuestaSatisfaccionRoutes);
 
 
