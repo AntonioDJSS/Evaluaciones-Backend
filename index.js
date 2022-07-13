@@ -12,6 +12,9 @@ import preguntasRoutes from "./routes/preguntasRoutes.js"
 import residuosRoutes from "./routes/residuosRoutes.js"
 //Importamos la dependencia cors para solucionar el error en el front cuando hacemos una peticion al back
 import usuarioRoutes from "./routes/usuarioRoutes.js"
+
+import encuestaSatisfaccionRoutes from "./routes/encuestaSatifaccionRoutes.js"
+
 //con cors evitamos que alguien acceda a la api
 import cors from "cors";
 //Funcionalidad para el servidor
@@ -41,7 +44,7 @@ app.use("/",(req,res)=>{
     res.send("Hola mundo");
 }); */
 //Puerto para que corra
-const PORT = process.env.PORT || 4001
+const PORT = process.env.PORT || 4000
 //Puerto para que corra
 app.listen(PORT, () => {
     console.log(`Servidor ejecutando en el puerto ${PORT}`);
@@ -52,4 +55,6 @@ app.use("/evaluaciones", evaluacionesRoutes);
 app.use("/preguntas", preguntasRoutes);
 app.use("/usuario", usuarioRoutes);
 app.use("/residuos", residuosRoutes);
+app.use("/encuestaSatisfaccion", encuestaSatisfaccionRoutes);
+
 

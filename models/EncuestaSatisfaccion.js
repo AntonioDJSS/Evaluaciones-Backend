@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 //creamos la base de datos
 //creamos el esquema
 
-const usuarioSchema = mongoose.Schema({
+const encuestaSatisfaccionSchema = mongoose.Schema({
     nombre:{
         type: String,
         required: true,
@@ -103,6 +103,6 @@ const usuarioSchema = mongoose.Schema({
 
 })
 //Se crea el registro del modelo
-const usuario = mongoose.model("Usuario", usuarioSchema);
-export default usuario;
+const EncuestaSatisfaccion = mongoose.model("Encuesta Satisfaccion", encuestaSatisfaccionSchema);
+export default EncuestaSatisfaccion;
 
