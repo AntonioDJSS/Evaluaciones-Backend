@@ -37,7 +37,8 @@ const corsOptions = {
         }
     }
 }
-app.use(cors(corsOptions));  /*
+app.use(cors(corsOptions));
+  /*
 
 //Cramos la pag para correr en el navegador
 app.use("/",(req,res)=>{

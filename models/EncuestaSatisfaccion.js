@@ -103,6 +103,6 @@ const encuestaSatisfaccionSchema = mongoose.Schema({
 
 })
 //Se crea el registro del modelo
-const EncuestaSatisfaccion = mongoose.model("Encuesta Satisfaccion", encuestaSatisfaccionSchema);
+const EncuestaSatisfaccion = mongoose.model("EncuestaSatisfaccion", encuestaSatisfaccionSchema);
 export default EncuestaSatisfaccion;
 
